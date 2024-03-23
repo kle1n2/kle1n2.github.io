@@ -1,0 +1,76 @@
+site_name: My Blog
+theme:
+  name: material
+  language: zh
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: brown
+      accent: brown
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.prune
+    - navigation.top
+    - search.share
+    - search.highlight
+    - search.suggest
+    - navigation.footer
+    - content.code.copy
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/kle1n2
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+markdown_extensions:
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.critic:
+      mode: view
+  - pymdownx.details
+  - pymdownx.highlight:
+      linenums_style: pymdownx-inline
+      line_spans: __span
+      use_pygments: true
+      pygments_lang_class: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - md_in_html
+  - attr_list
+  - toc:
+      permalink: true
+  - tables
+plugins:
+  - search
+
+nav:
+  - about me: index.md
+  - 课堂笔记: 
+    - 近世代数: xxx.md
+    - 计组: 第一章计算机系统概述.md
